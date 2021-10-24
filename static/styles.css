@@ -16,8 +16,22 @@ main {
     width: 280px;
 }
 
+.nav-bar .nav-name {
+    padding-left: 1rem;
+}
+
 i.nav-icon {
     height: 1rem;
     width: 1rem;
     margin-right: 1rem;
+}
+
+.contact-menu {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.contact-menu > .contact-item {
+    display: inline-block;
 }
