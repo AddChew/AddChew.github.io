@@ -11,6 +11,10 @@ main {
     overflow-y: hidden;
 }
 
+iframe {
+    height: 100%;
+    width: 100%;
+}
 
 .nav-bar {
     width: 280px;
@@ -34,4 +38,18 @@ i.nav-icon {
 
 .contact-menu > .contact-item {
     display: inline-block;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.content-container {
+    padding: 1rem 2rem 0em;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
 }
