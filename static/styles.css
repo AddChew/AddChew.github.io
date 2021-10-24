@@ -1,0 +1,23 @@
+body  {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.nav-bar {
+    width: 280px;
+}
+
+i.nav-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+}
