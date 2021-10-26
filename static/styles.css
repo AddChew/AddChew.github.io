@@ -20,8 +20,21 @@ iframe {
     width: 280px;
 }
 
-.nav-bar .nav-name {
-    padding-left: 1rem;
+.profile-pic {
+    height: 64px; 
+    width: 64px; 
+}
+
+.profile {
+    width: auto;
+}
+
+.zero-margin {
+    margin: 0rem;
+}
+
+.zero-padding {
+    padding: 0rem;
 }
 
 i.nav-icon {
