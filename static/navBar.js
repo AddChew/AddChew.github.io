@@ -14,7 +14,6 @@ let set_active_tab = () => {
 // Function to toggle display of navbar
 let toggle_navbar = () => {
     const navbar = document.querySelector(".nav-bar")
-    // console.log(navbar)
     navbar.classList.toggle("nav-bar-active")
 }
 
