@@ -9,16 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-    <link href="static/all.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'styles/all.css') }}" rel="stylesheet">
 
     <!-- To edit this path later when we convert to native html -->
-    <link href="static/styles.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'styles/styles.css') }}" rel="stylesheet">
 
     <!-- To edit this path later when I have a favicon -->
-    <link rel="shortcut icon" href="static/favicon.ico">
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'assets/favicon.ico')}}">
     
     {% block javascript %}{% endblock %}
-    <script src="static/navBar.js"></script>
+    <script src="{{ url_for('static', filename = 'appscripts/navBar.js') }}"></script>
 
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -28,10 +28,10 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 white-text dark-background nav-bar">
             <div class="row">
                 <div class="profile"> 
-                    <img src="static/passport.png" class="profile-pic">
+                    <img src="{{ url_for('static', filename = 'assets/passport.png')}}" class="profile-pic">
                 </div>
                 <div class="profile zero-padding">
-                    <a href="about.html" class="white-text text-decoration-none">
+                    <a href="index.html" class="white-text text-decoration-none">
                         <h4 class="zero-margin">Addison Chew</h4>
                     </a>
                     <span>Data Analyst | Scientist</span>
@@ -41,7 +41,7 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <!-- To edit this path later when we convert to native html -->
-                    <a href="about.html" class="nav-link white-text">
+                    <a href="index.html" class="nav-link white-text">
                         <i class="fas fa-address-card nav-icon"></i>
                         About
                     </a>

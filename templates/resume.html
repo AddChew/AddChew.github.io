@@ -9,7 +9,7 @@
 {% block content %}
     <div class="main-container">
         <div class="content-container">
-            <iframe src="static/Addison Resume 14102021.pdf" type="application/pdf"></iframe>
+            <iframe src="{{ url_for('static', filename = 'assets/Addison Resume 14102021.pdf') }}" type="application/pdf"></iframe>
         </div>
     </div>
 {% endblock %}
